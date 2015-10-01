@@ -20,23 +20,45 @@
         >
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="1"
-            />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="2"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="A"
+                android:layout_width="@dimen/main_button"
+                android:layout_height="@dimen/main_button"
+                android:background="@drawable/button_round"
+                android:layout_margin="@dimen/main_button_round_margin"
+
+                />
+            <Button
+                android:text="B"
+                android:layout_width="@dimen/main_button"
+                android:layout_height="@dimen/main_button"
+                android:background="@drawable/button_round"
+                android:layout_margin="@dimen/main_button_round_margin"
+
+                />
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="Button C"
+                android:layout_width="@dimen/main_button"
+                android:layout_height="@dimen/main_button"
+                android:background="@drawable/button_round"
+                android:layout_margin="@dimen/main_button_round_margin"
+                android:onClick="buttonClick"
+                />
+            <Button
+                android:text="Button D"
+                android:layout_width="@dimen/main_button"
+                android:layout_height="@dimen/main_button"
+                android:background="@drawable/button_round"
+                android:layout_margin="@dimen/main_button_round_margin"
+                android:onClick="buttonClick"
+                />
         </TableRow>
 
     </TableLayout>
