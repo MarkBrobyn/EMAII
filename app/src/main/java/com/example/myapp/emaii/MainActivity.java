@@ -2,11 +2,26 @@ package com.example.myapp.emaii;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
+import static android.widget.Toast.LENGTH_SHORT;
+import static android.widget.Toast.makeText;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    private boolean DEV_MODE=true;
+    public void buttonClick(View view){
+        Button button=(Button)view;
+        if(DEV_MODE)
+            makeText(getApplicationContext(), button.getText().toString(), LENGTH_SHORT).show();
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
