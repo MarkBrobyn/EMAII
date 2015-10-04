@@ -1,5 +1,6 @@
 package com.example.myapp.emaii;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,8 +13,11 @@ import static android.widget.Toast.LENGTH_SHORT;
 import static android.widget.Toast.makeText;
 
 
+
 public class MainActivity extends ActionBarActivity {
 
+
+    private static final String TAG="MainActivity";
     private boolean DEV_MODE=true;
     public void buttonClick(View view){
         Button button=(Button)view;
@@ -22,11 +26,13 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        View view=findViewById(R.id.main);
+        Log.d(TAG,view.getTag().toString());
+        makeText(getApplicationContext(), view.getTag().toString(), LENGTH_SHORT).show();
     }
 
     @Override
