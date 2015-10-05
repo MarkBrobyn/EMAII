@@ -14,17 +14,9 @@
     tools:context=".MainActivity"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="layout-large"
-        />
-
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-
         >
 
         <TableRow
@@ -37,7 +29,7 @@
                 android:background="@drawable/button_round"
                 android:layout_margin="@dimen/main_button_round_margin"
                 android:onClick="buttonClick"
-                />
+                android:id="@+id/" />
             <Button
                 android:text="Button B"
                 android:layout_width="@dimen/main_button_large"
@@ -68,7 +60,5 @@
                 android:onClick="buttonClick"
                 />
         </TableRow>
-
     </TableLayout>
-
 </LinearLayout>

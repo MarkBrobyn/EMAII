@@ -14,18 +14,9 @@
     tools:context=".MainActivity"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="layout"
-        />
-
-
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-
         >
 
         <TableRow
@@ -69,7 +60,5 @@
                 android:onClick="buttonClick"
                 />
         </TableRow>
-
     </TableLayout>
-
 </LinearLayout>

@@ -32,7 +32,8 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         View view=findViewById(R.id.main);
         Log.d(TAG,view.getTag().toString());
-        makeText(getApplicationContext(), view.getTag().toString(), LENGTH_SHORT).show();
+        if(DEV_MODE)
+            makeText(getApplicationContext(), view.getTag().toString(), LENGTH_SHORT).show();
     }
 
     @Override
