@@ -3,6 +3,7 @@ package com.example.myapp.emaii;
 import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,11 +15,12 @@ import static android.widget.Toast.makeText;
 
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
 
     private static final String TAG="MainActivity";
     private boolean DEV_MODE=true;
+
     public void buttonClick(View view){
         Button button=(Button)view;
         if(DEV_MODE)

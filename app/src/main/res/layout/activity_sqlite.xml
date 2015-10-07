@@ -1,0 +1,97 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/sqlite_top_bar"
+        android:text="@string/activity_sqlite"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:textSize="36sp"
+
+        android:gravity="center"
+        android:background="@color/appPage"
+        />
+    <EditText
+        android:id="@+id/title_edittext"
+        android:hint="@string/enterTitle"
+        android:layout_height="50dp"
+        android:textSize="27sp"
+        android:layout_width="fill_parent"
+        android:maxLines="2"
+        android:gravity="top"
+        android:padding="10dp"
+        android:background="@color/appEdit"
+        android:editable="true"
+        android:lines="2"
+        android:maxHeight="200dp"
+        android:fadeScrollbars="false"
+        android:nestedScrollingEnabled="false" />
+
+    <EditText
+        android:id="@+id/content_edittext"
+        android:hint="@string/enterContent"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:textSize="27sp"
+        android:gravity="top"
+        android:padding="10dp"
+        android:background="@color/verylightblue"
+        android:minHeight="500dp"
+        />
+
+    <ListView
+        android:id="@+id/sqlite_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/appListView"
+        />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        >
+
+        <TableRow>
+            <Button android:id="@+id/button_sqlite_add_item"
+                android:layout_width="@dimen/main_button_width"
+                android:layout_height="wrap_content"
+                android:text="@string/button_sqlite_add_item"
+                android:textAllCaps="false"
+                />
+            <Button android:id="@+id/button_sqlite_show_all"
+                android:layout_width="@dimen/main_button_width"
+                android:layout_height="wrap_content"
+                android:text="@string/button_sqlite_show_all"
+                android:textAllCaps="false"
+                />
+            <Button android:id="@+id/button_sqlite_delete_all"
+                android:layout_width="@dimen/main_button_width"
+                android:layout_height="wrap_content"
+                android:text="@string/button_sqlite_delete_all"
+                android:textAllCaps="false"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/sqlite_status"
+        android:text="@string/status"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_bar_height"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@color/appStatus"
+        />
+
+</LinearLayout>
