@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.IOException;
+
 import static android.widget.Toast.LENGTH_SHORT;
 import static android.widget.Toast.makeText;
 
@@ -36,7 +38,16 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG,view.getTag().toString());
         if(DEV_MODE)
             makeText(getApplicationContext(), view.getTag().toString(), LENGTH_SHORT).show();
+
+        DataBaseHelper myDbHelper=new DataBaseHelper(this);
+        try {
+            myDbHelper.createDataBase();
+        }
+        catch (IOException ioe) {
+            throw new Error("Unable to create database");
+        }
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -56,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }

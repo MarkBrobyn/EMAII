@@ -86,12 +86,10 @@
 
     <TextView
         android:id="@+id/sqlite_status"
-        android:text="@string/status"
+        android:text="Status..."
         android:layout_width="fill_parent"
-        android:layout_height="@dimen/bottom_bar_height"
         android:textSize="18sp"
         android:gravity="center"
-        android:background="@color/appStatus"
         />
 
 </LinearLayout>

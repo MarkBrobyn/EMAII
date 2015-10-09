@@ -1,0 +1,108 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/edit_item_datetime"
+        android:text="DATE TIME"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edit_item_title"
+        android:hint="Enter title..."
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:maxLines="2"
+        android:gravity="top"
+        android:padding="10dp"
+        android:editable="true"
+        android:lines="2"
+        android:maxHeight="200dp"
+        android:fadeScrollbars="false"
+        android:nestedScrollingEnabled="false" />
+    <Button
+        android:text="@string/takePicture"
+        android:layout_width="@dimen/main_button"
+        android:layout_height="@dimen/main_button"
+        android:background="@drawable/button_round"
+        android:layout_margin="@dimen/main_button_round_margin"
+        android:textAllCaps="false"
+        android:onClick="buttonClick"
+        />
+    <EditText
+        android:id="@+id/edit_item_content"
+        android:hint="Enter content..."
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:gravity="top"
+        android:padding="10dp"
+        android:minHeight="500dp" />
+
+
+
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <TableRow android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="@dimen/main_button"
+                android:layout_height="fill_parent"
+                android:text="Save"
+                android:id="@+id/button_edit_item_save"
+                android:layout_gravity="left" />
+
+            <Button
+                android:layout_width="@dimen/main_button"
+                android:layout_height="fill_parent"
+                android:text="Send"
+                android:id="@+id/button_edit_item_send"
+                android:layout_gravity="right"
+                android:onClick="sendItem"
+                />
+
+
+        </TableRow>
+
+
+
+        <TableRow android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+
+            <Button
+                android:layout_width="@dimen/main_button"
+                android:layout_height="fill_parent"
+                android:text="Cancel"
+                android:id="@+id/button_edit_item_cancel"
+                android:layout_gravity="left" />
+            <Button
+                android:layout_width="@dimen/main_button"
+                android:layout_height="fill_parent"
+                android:text="Delete"
+                android:id="@+id/button_edit_item_delete"
+                android:layout_gravity="right" />
+
+        </TableRow>
+
+
+    </TableLayout>
+    
+
+</LinearLayout>

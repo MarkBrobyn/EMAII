@@ -7,4 +7,5 @@
     <string name="buttonB">me</string>
     <string name="buttonC">us</string>
     <string name="buttonD">...</string>
+    <string name="takePicture">Take Picture</string>
 </resources>
